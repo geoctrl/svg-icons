@@ -225,6 +225,10 @@
         width: 24px;
         height: 24px;
       }
+      .image {
+        width: 24px;
+        height: 24px;
+      }
       .info-outline {
         width: 24px;
         height: 24px;
@@ -477,6 +481,10 @@
     <symbol id="help" viewBox="0 0 24 24">
       <title>help icon</title>
       <path fill="#404040" d="M12 2C6.475 2 2 6.475 2 12s4.475 10 10 10 10-4.475 10-10S17.525 2 12 2zm1 17h-2v-2h2v2zm2.065-7.745l-.895.92C13.45 12.895 13 13.5 13 15h-2v-.5c0-1.105.45-2.105 1.17-2.83l1.245-1.26c.36-.36.585-.86.585-1.41 0-1.105-.895-2-2-2s-2 .895-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.355 1.675-.935 2.255z"/>
+    </symbol>
+    <symbol id="image" viewBox="0 0 24 24">
+      <title>image icon</title>
+      <path d="M20 5c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16M5 16h14l-4.5-6-3.5 4.5-2.5-3L5 16z"/>
     </symbol>
     <symbol id="info-outline" viewBox="0 0 24 24">
       <title>info-outline icon</title>
@@ -1188,6 +1196,26 @@
 <pre>
 <code id="code-help">&lt;svg role=&quot;img&quot; class=&quot;help&quot;&gt;
   &lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;</code>
+</pre>
+        </div>
+      </div>
+      <div class="icon">
+        <p>#image</p>
+        <div class="icon-wrapper">
+          <svg role="img" class="image">
+            <use xlink:href="#image"></use>
+          </svg>
+        </div>
+        <div class="icon-dev">
+          <input class="show-code" id="toggle-image" type="checkbox" />
+          <div class="icon-action">
+            <button onclick="gulpSvgSymbol.copy('code-image')">Copy</button>
+            <label onclick="gulpSvgSymbol.reflow('code-image')" for="toggle-image">Show</label>
+          </div>
+<pre>
+<code id="code-image">&lt;svg role=&quot;img&quot; class=&quot;image&quot;&gt;
+  &lt;use xlink:href=&quot;#image&quot;&gt;&lt;/use&gt;
 &lt;/svg&gt;</code>
 </pre>
         </div>
