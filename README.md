@@ -34,4 +34,4 @@ bower install svg-icons --save
 
 See icons-manifest.json to quickly see all available icons.
 
-Only needed SVGs are included in the build. The `google-svgs` folder is all of Google's icons. The ones included in the Tute icon build process are in the `svg` folder.
+Only needed SVGs are included in the build. The `google-svgs` folder is all of Google's icons. The ones included in the icon build process are in the `svg` folder.
